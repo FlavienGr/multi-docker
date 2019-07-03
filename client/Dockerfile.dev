@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR '/app'
 
-COPY ./client/package* ./
+COPY ./package* ./
 
 RUN npm install
 
