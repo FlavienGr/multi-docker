@@ -26,6 +26,7 @@ export default class Fib extends Component {
       .catch(err => console.log(err));
   };
   renderSeenIndexes = () => {
+    if (this.state.seenIndexes.length < 1) return;
     return this.state.seenIndexes.map(({ number }) => number).join(", ");
   };
   renderValues = () => {
